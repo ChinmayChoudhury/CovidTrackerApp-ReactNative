@@ -19,13 +19,9 @@ export default class AboutUs extends React.Component {
     console.log("Redirecting to Chinmay's LinkedIn");
     Linking.openURL('https://www.linkedin.com/in/chinmay-nrusingh-choudhury');
   };
-  onclickAwani = () => {
-    console.log("Redirecting to Awani's LinkedIn");
-    Linking.openURL('https://www.linkedin.com/in/awanikendurkar');
-  };
   onclickGithub = () => {
     console.log('Redirecting to Github repository');
-    Linking.openURL('https://github.com/awanikendurkar/madj');
+    Linking.openURL('https://github.com/ChinmayChoudhury/CovidTrackerApp-ReactNative');
   };
   onclickAPI = () => {
     console.log('Redirecting to API webpage');
@@ -60,28 +56,10 @@ export default class AboutUs extends React.Component {
           </Text>
         </View>
         <View>
-          <Text style={styles.title}>Developers</Text>
+          <Text style={styles.title}>Developer</Text>
         </View>
         <View>
-          <ListItem bottomDivider onPress={this.onclickAwani}>
-            <Image
-              style={{
-                width: 51,
-                height: 51,
-                resizeMode: 'contain',
-              }}
-              source={require('../assets/Awani.jpeg')}
-            />
-            <ListItem.Content>
-              <ListItem.Title style={styles.name}>
-                Awani Kendurkar
-              </ListItem.Title>
-              <ListItem.Subtitle style={styles.nameText}>
-                React Native Developer
-              </ListItem.Subtitle>
-            </ListItem.Content>
-            <ListItem.Chevron />
-          </ListItem>
+          
           <ListItem bottomDivider onPress={this.onclickChinmay}>
             <Image
               style={{
